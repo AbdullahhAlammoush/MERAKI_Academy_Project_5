@@ -25,7 +25,7 @@ app.use("/orders", ordersRouter);
 app.use("/product", productRouter);
 app.use("/search", searchRouter);
 app.use("/category", categoryRouter);
-app.use("/profile", productRouter);
+app.use("/profile", profileRouter);
 
 app.listen(PORT, () => {
   console.log(`SERVER WORKING ON PORT: ${PORT}`);

@@ -2,9 +2,9 @@ const connection = require("../database/db");
 const db = require("../database/db");
 
 const profile = (req, res) => {
-  const { Username } = req.params.Username;
-  const query = `select * from user where Username=${Username}`;
-  const data = [Username];
+  const userId = req.params.userId;
+  const query = `select Username,Phone_number,email from user where id=${userId}`;
+  const data = [userId];
   connection.query(query, data, (err, result) => {
     if (result) {
       console.log(result);
