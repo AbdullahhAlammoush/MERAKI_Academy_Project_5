@@ -16,7 +16,6 @@ const categoryFunc = (req, res) => {
         err,
       });
     } else if (result) {
-      console.log("ysysysysysys");
       res.status(200).json({
         success: true,
         message: `All products from ${categoryType} category`,
